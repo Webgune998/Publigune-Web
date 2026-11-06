@@ -1,0 +1,433 @@
+/* ==========================================================
+   PUBLIGUNE · Hoja de estilos
+   ----------------------------------------------------------
+   Índice:
+   1. Colores y variables
+   2. Base (reset, cuerpo, enlaces)
+   3. Cabecera, menú y selector de idioma
+   4. Selector de idioma (truco con radios, sin JavaScript)
+   5. Textos y elementos comunes (títulos, imágenes, botones)
+   6. Sección Inicio (hero, Nor gara?, tarjetas)
+   7. Sección Reserva (formulario, lista)
+   8. Valoraciones
+   9. Non aurkitu (panel + mapa)
+   10. Pie de página
+   11. Móvil
+   ========================================================== */
+
+
+/* ---------- 1. COLORES Y VARIABLES ----------
+   Cambia aquí los colores de toda la web. */
+:root {
+  --bg:    #fbf7f0;   /* fondo de la página */
+  --surf:  #ffffff;   /* fondo de tarjetas y paneles */
+  --ink:   #1d1b24;   /* texto y bordes */
+  --mut:   #6a667a;   /* texto secundario (gris) */
+  --acc:   #ff5a3c;   /* color principal (naranja) */
+  --acc2:  #ffc531;   /* color secundario (amarillo) */
+  --line:  #e6e0d4;   /* líneas suaves */
+
+  /* Respeta las zonas de los móviles con "notch" */
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Modo oscuro: se activa solo si el dispositivo lo usa */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:   #15131b;
+    --surf: #201d29;
+    --ink:  #f4f1ea;
+    --mut:  #a39fb3;
+    --line: #322e3f;
+  }
+}
+
+
+/* ---------- 2. BASE ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;                              /* desplazamiento suave */
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 'Space Grotesk', system-ui, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Contenedor centrado (ancho máximo de la web) */
+.w {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* ---------- 3. CABECERA Y MENÚ ---------- */
+header {
+  position: sticky;                                     /* se queda fija arriba */
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  background: var(--bg);
+  border-bottom: 2px solid var(--ink);
+}
+
+header .w {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 64px;
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+
+.logo b {
+  color: var(--acc);                                    /* "gune" en naranja */
+}
+
+/* Menú de navegación */
+nav {
+  display: flex;
+  flex: 1;
+  gap: 6px;
+  overflow-x: auto;
+}
+
+nav a {
+  padding: 6px 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  border-color: var(--ink);
+}
+
+
+/* ---------- 4. SELECTOR DE IDIOMA (EU / ES) ----------
+   Funciona con dos radios ocultos que van al principio del <body>:
+   <input id="l-eu"> y <input id="l-es">.
+   Los <label> de la cabecera los marcan, y el CSS muestra
+   un idioma u otro. */
+
+/* Radios ocultos */
+.rd {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Botones EU | ES */
+.lang {
+  display: flex;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+}
+
+.lang label {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Botón del idioma activo (relleno) */
+#l-eu:checked ~ header label[for=l-eu],
+#l-es:checked ~ header label[for=l-es] {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* Textos: por defecto solo se ve el euskera (.eu) */
+.es {
+  display: none;
+}
+
+/* Si se marca ES: se muestra el castellano y se oculta el euskera */
+#l-es:checked ~ * .es { display: inline; }
+#l-es:checked ~ * .eu { display: none; }
+
+
+/* ---------- 5. ELEMENTOS COMUNES ---------- */
+
+/* Títulos */
+h1 {
+  display: inline-block;
+  margin: 0 0 16px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  border-bottom: 4px solid var(--acc);                  /* subrayado naranja */
+}
+
+h2 {
+  display: inline-block;
+  margin: 0 0 14px;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  border-bottom: 3px solid var(--acc2);                 /* subrayado amarillo */
+}
+
+/* Hueco para imágenes (sustitúyelo por <img>) */
+.ph {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 var(--acc);
+  color: var(--mut);
+  font-size: 0.85rem;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--surf), var(--surf) 12px,
+    var(--line) 12px, var(--line) 13px
+  );
+}
+
+/* Fotos de la web: guarda las imágenes en la misma carpeta con estos nombres
+   (portada.png y nosotros.png).
+   Si el archivo no existe, se ve el recuadro rayado. */
+.foto-portada {
+  background:
+    url('portada.png') center / cover no-repeat,
+    repeating-linear-gradient(45deg, var(--surf), var(--surf) 12px, var(--line) 12px, var(--line) 13px);
+}
+
+.foto-nosotros {
+  aspect-ratio: 2.4 / 1;                                /* misma proporción que la foto del equipo */
+  background:
+    url('nosotros.png') center / cover no-repeat,
+    repeating-linear-gradient(45deg, var(--surf), var(--surf) 12px, var(--line) 12px, var(--line) 13px);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 var(--ink);
+  background: var(--acc);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.alt {                                              /* botón secundario (blanco) */
+  background: var(--surf);
+  color: var(--ink);
+}
+
+/* Separación entre bloques */
+.sec {
+  padding: 36px 0;
+}
+
+
+/* ---------- 6. SECCIÓN INICIO ---------- */
+
+/* Bloque principal: texto a la izquierda, imagen a la derecha */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 36px;
+  align-items: center;
+  padding: 56px 0;
+}
+
+/* Bloque "Nor gara?": texto + foto panorámica del equipo.
+   La columna de la foto es más ancha para que se vea entera */
+.two {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 36px;
+  align-items: center;
+}
+
+/* Tarjetas de servicios (se reparten solas según el ancho) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 18px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--surf);
+}
+
+.card .ic {                                             /* icono */
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: var(--acc2);
+  font-size: 1.3rem;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--mut);
+}
+
+
+/* ---------- 7. SECCIÓN RESERVA ---------- */
+
+/* Lista "Zer jarri nahi duzu?" */
+ul.chk {
+  padding-left: 20px;
+}
+
+ul.chk li {
+  margin: 6px 0;
+}
+
+/* Formulario: 2 columnas */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 20px;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 var(--acc2);
+  background: var(--surf);
+}
+
+.form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: inherit;
+}
+
+.form .full {                                           /* ocupa las 2 columnas */
+  grid-column: 1 / -1;
+}
+
+
+/* ---------- 8. VALORACIONES ---------- */
+.stars {
+  color: var(--acc2);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px var(--ink);
+}
+
+.rev p {
+  margin: 8px 0;
+}
+
+.rev small {
+  color: var(--mut);
+}
+
+
+/* ---------- 9. NON AURKITU ---------- */
+.where {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;                   /* panel | mapa */
+  gap: 20px;
+}
+
+/* Panel izquierdo con texto y botones */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  background: var(--surf);
+}
+
+.panel .btn {
+  text-align: center;
+}
+
+/* Mapa de Google Maps (iframe) */
+.map {
+  min-height: 300px;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  background: var(--surf);
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 0;
+}
+
+
+/* ---------- 10. PIE DE PÁGINA ---------- */
+footer {
+  margin-top: 50px;
+  padding: 24px 0;
+  border-top: 2px solid var(--ink);
+  color: var(--mut);
+}
+
+footer .w {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+
+/* ---------- 11. MÓVIL (pantallas de hasta 760px) ----------
+   Todo pasa a una sola columna. */
+@media (max-width: 760px) {
+  .hero,
+  .two,
+  .where,
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

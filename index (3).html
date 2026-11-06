@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publigune</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<input class="rd" type="radio" name="lang" id="l-eu" checked aria-label="Euskara">
+<input class="rd" type="radio" name="lang" id="l-es" aria-label="Español">
+
+<header><div class="w">
+<a class="logo" href="#hasiera">Publi<b>gune</b></a>
+<nav><a href="#hasiera"><span class="eu">Hasiera</span><span class="es">Inicio</span></a><a href="#erreserba"><span class="eu">Erreserba</span><span class="es">Reserva</span></a><a href="#non"><span class="eu">Non aurkitu</span><span class="es">Dónde encontrarnos</span></a></nav>
+<div class="lang"><label for="l-eu">EU</label><label for="l-es">ES</label></div>
+</div></header>
+
+<main class="w">
+<section id="hasiera">
+<div class="hero"><div><h1>Publigune</h1><p><span class="eu">Zure marka ikusgai jartzen dugu: kartelak, errotuluak, kanpainak eta diseinua, Nafarroako txoko guztietarako.</span><span class="es">Ponemos tu marca a la vista: carteles, rótulos, campañas y diseño para todos los rincones de Navarra.</span></p><a class="btn" href="#erreserba"><span class="eu">Erreserba egin</span><span class="es">Hacer reserva</span></a></div><div class="ph foto-portada" role="img" aria-label="Publigune"></div></div>
+<div class="sec two"><div><h2><span class="eu">Nor gara?</span><span class="es">¿Quiénes somos?</span></h2><p><span class="eu">Publigune publizitate-agentzia bat da, tokiko negozioei hazten laguntzeko sortua. Estrategia, sormena eta ekoizpena eskaintzen ditugu, hurbiletik eta euskaraz zein gaztelaniaz.</span><span class="es">Publigune es una agencia de publicidad creada para ayudar a crecer a los negocios locales. Ofrecemos estrategia, creatividad y producción, de forma cercana y en euskera y castellano.</span></p></div><div class="ph foto-nosotros" role="img" aria-label="Equipo de Publigune"></div></div>
+<div class="sec"><h2><span class="eu">Egiten dugun lana</span><span class="es">Lo que hacemos</span></h2>
+<div class="cards">
+<div class="card"><div class="ic">📣</div><h3><span class="eu">Kanpainak</span><span class="es">Campañas</span></h3><p><span class="eu">Zure mezua jendearengana iristeko ideiak.</span><span class="es">Ideas para que tu mensaje llegue a la gente.</span></p></div>
+<div class="card"><div class="ic">🪧</div><h3><span class="eu">Kanpoko publizitatea</span><span class="es">Publicidad exterior</span></h3><p><span class="eu">Kartelak, panelak eta errotuluak.</span><span class="es">Carteles, paneles y rótulos.</span></p></div>
+<div class="card"><div class="ic">🖨️</div><h3><span class="eu">Inprimaketa</span><span class="es">Impresión</span></h3><p><span class="eu">Liburuxkak, banderolak eta material grafikoa.</span><span class="es">Folletos, lonas y material gráfico.</span></p></div>
+<div class="card"><div class="ic">📱</div><h3><span class="eu">Sare sozialak</span><span class="es">Redes sociales</span></h3><p><span class="eu">Edukia eta kudeaketa digitala.</span><span class="es">Contenido y gestión digital.</span></p></div>
+<div class="card"><div class="ic">🎨</div><h3><span class="eu">Diseinua</span><span class="es">Diseño</span></h3><p><span class="eu">Marka-irudia eta logotipoak.</span><span class="es">Imagen de marca y logotipos.</span></p></div>
+</div></div>
+</section>
+
+<section id="erreserba">
+<div class="hero"><div><h1><span class="eu">Erreserba egin</span><span class="es">Hacer reserva</span></h1><p><span class="eu">Zer jarri nahi duzu?</span><span class="es">¿Qué quieres poner?</span></p><ul class="chk"><li><span class="eu">Kartel edo errotulu bat</span><span class="es">Un cartel o rótulo</span></li><li><span class="eu">Kanpaina oso bat</span><span class="es">Una campaña completa</span></li><li><span class="eu">Aholkularitza doakoa</span><span class="es">Asesoramiento gratuito</span></li></ul></div>
+<form class="form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="503f5d00-fb3f-4c55-9207-ef07153c3165">
+<input type="hidden" name="subject" value="Nueva reserva · Publigune">
+<input type="hidden" name="from_name" value="Web Publigune">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<label><span class="eu">Izena</span><span class="es">Nombre</span><input name="izena" required></label>
+<label><span class="eu">Abizenak</span><span class="es">Apellidos</span><input name="abizenak" required></label>
+<label><span class="eu">Telefonoa</span><span class="es">Teléfono</span><input name="telefonoa" type="tel"></label>
+<label><span class="eu">Data</span><span class="es">Fecha</span><input name="data" type="date"></label>
+<label class="full"><span class="eu">Mezua</span><span class="es">Mensaje</span><textarea name="mezua" rows="4"></textarea></label>
+<button class="btn full"><span class="eu">Bidali</span><span class="es">Enviar</span></button>
+</form></div>
+<div class="sec"><h2><span class="eu">Bezeroen balorazioak</span><span class="es">Valoraciones de clientes</span></h2>
+<div class="cards">
+<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Oso profesionalak eta azkarrak. Gure dendak ikusgarritasuna irabazi du.</span><span class="es">Muy profesionales y rápidos. Nuestra tienda ha ganado visibilidad.</span></p><small>Maite, Iruñea</small></div>
+<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Kanpaina polita eta prezio onean. Gomendatzekoa!</span><span class="es">Campaña preciosa y a buen precio. ¡Recomendable!</span></p><small>Aitor, Barañáin</small></div>
+<div class="card rev"><div class="stars">★★★★☆</div><p><span class="eu">Tratu ona eta emaitza oso ona. Errepikatuko dugu.</span><span class="es">Buen trato y muy buen resultado. Repetiremos.</span></p><small>Leire, Burlata</small></div>
+</div></div>
+</section>
+
+<section id="non" class="sec"><h2><span class="eu">Non aurkitu</span><span class="es">Dónde encontrarnos</span></h2>
+<div class="where"><div class="panel"><p><span class="eu">Zugarramurdi, Nafarroa. Etorri bisitatzera edo deitu iezaguzu.</span><span class="es">Zugarramurdi, Navarra. Ven a visitarnos o llámanos.</span></p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Zugarramurdi"><span class="eu">Nola iritsi</span><span class="es">Cómo llegar</span></a><a class="btn alt" href="tel:+34686091704"><span class="eu">Deitu</span><span class="es">Llamar</span></a><a class="btn alt" href="mailto:ik.anermartinez@hernanilanh.eus"><span class="eu">Posta elektronikoa</span><span class="es">Correo electrónico</span></a></div>
+<div class="map"><iframe title="Zugarramurdi" src="https://maps.google.com/maps?q=Zugarramurdi,+Navarra&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div>
+</section>
+</main>
+
+<footer><div class="w"><b>Publigune</b><span>© 2026 Publigune</span></div></footer>
+</body>
+</html>
