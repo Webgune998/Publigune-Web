@@ -11,8 +11,9 @@
    7. Sección Reserva (formulario, lista)
    8. Valoraciones
    9. Non aurkitu (panel + mapa)
-   10. Pie de página
-   11. Móvil
+   10. Agenda 2030 (compromiso verde)
+   11. Pie de página
+   12. Móvil
    ========================================================== */
 
 
@@ -26,6 +27,7 @@
   --acc:   #ff5a3c;   /* color principal (naranja) */
   --acc2:  #ffc531;   /* color secundario (amarillo) */
   --line:  #e6e0d4;   /* líneas suaves */
+  --eco:   #2f7d4f;   /* verde de la sección Agenda 2030 */
 
   /* Respeta las zonas de los móviles con "notch" */
   box-sizing: border-box;
@@ -405,7 +407,60 @@ ul.chk li {
 }
 
 
-/* ---------- 10. PIE DE PÁGINA ---------- */
+/* ---------- 10. AGENDA 2030 (COMPROMISO VERDE) ---------- */
+.eco h2 {
+  border-bottom-color: var(--eco);                      /* subrayado verde */
+}
+
+.eco-intro {
+  max-width: 640px;
+  margin: 0 0 20px;
+  color: var(--mut);
+}
+
+/* 3 tarjetas: se reparten solas según el ancho */
+.eco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.eco-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  box-shadow: 6px 6px 0 var(--eco);
+}
+
+.eco-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.eco-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Icono de cada Objetivo de Desarrollo Sostenible (ODS):
+   imágenes ods-13.png, ods-12.png y ods-9.png */
+.ods-img {
+  display: block;
+  width: 140px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.eco-note {
+  margin: 20px 0 0;
+  font-size: 0.9rem;
+  color: var(--mut);
+}
+
+
+/* ---------- 11. PIE DE PÁGINA ---------- */
 footer {
   margin-top: 50px;
   padding: 24px 0;
@@ -421,7 +476,7 @@ footer .w {
 }
 
 
-/* ---------- 11. MÓVIL (pantallas de hasta 760px) ----------
+/* ---------- 12. MÓVIL (pantallas de hasta 760px) ----------
    Todo pasa a una sola columna. */
 @media (max-width: 760px) {
   .hero,
