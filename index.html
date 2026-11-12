@@ -3,98 +3,145 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Publigune</title>
+<title>Publigune · Publizitate-agentzia Nafarroan / Agencia de publicidad en Navarra</title>
+<meta name="description" content="Publigune: publizitate-agentzia Nafarroan. Kanpainak, kanpoko publizitatea, inprimaketa, sare sozialak eta diseinua. Agencia de publicidad en Navarra.">
+<meta name="theme-color" content="#fbf7f0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%A3%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 <fieldset class="pg"><legend class="sr">Idioma / Hizkuntza</legend>
 <input class="rd" type="radio" name="lang" id="l-eu" checked aria-label="Euskara">
 <input class="rd" type="radio" name="lang" id="l-es" aria-label="Español">
 
+<a class="skip" href="#contenido"><span class="eu">Edukira joan</span><span class="es" lang="es">Saltar al contenido</span></a>
 <header><div class="w">
 <a class="logo" href="#hasiera">Publi<b>gune</b></a>
-<nav><a href="#hasiera"><span class="eu">Hasiera</span><span class="es">Inicio</span></a><a href="#erreserba"><span class="eu">Erreserba</span><span class="es">Reserva</span></a><a href="#non"><span class="eu">Non aurkitu</span><span class="es">Dónde encontrarnos</span></a><a href="#agenda2030"><span class="eu">Agenda 2030</span><span class="es">Agenda 2030</span></a></nav>
+<nav aria-label="Menu nagusia / Menú principal"><a href="#hasiera"><span class="eu">Hasiera</span><span class="es" lang="es">Inicio</span></a><a href="#erreserba"><span class="eu">Erreserba</span><span class="es" lang="es">Reserva</span></a><a href="#non"><span class="eu">Non aurkitu</span><span class="es" lang="es">Dónde encontrarnos</span></a><a href="#hazkundea"><span class="eu">Hazkunde-Grafikoak</span><span class="es" lang="es">Gráficos de crecimiento</span></a><a href="#agenda2030"><span class="eu">Agenda 2030</span><span class="es" lang="es">Agenda 2030</span></a></nav>
 <div class="lang"><label for="l-eu">EU</label><label for="l-es">ES</label></div>
 </div></header>
 
-<main class="w">
+<main class="w" id="contenido" tabindex="-1">
 <section id="hasiera">
-<div class="hero"><div><h1>Publigune</h1><p><span class="eu">Zure marka ikusgai jartzen dugu: kartelak, errotuluak, kanpainak eta diseinua, Nafarroako txoko guztietarako.</span><span class="es">Ponemos tu marca a la vista: carteles, rótulos, campañas y diseño para todos los rincones de Navarra.</span></p><p><span class="eu">Publigune Nafarroako publizitate-agentzia bat da, tokiko negozioen ikusgarritasuna hobetzeko sortua. Bezero bakoitzaren beharretara egokitutako irtenbideak eskaintzen ditugu: ideia bat sortzen dugunetik kalean edo pantailan jarri arte.</span><span class="es">Publigune es una agencia de publicidad navarra creada para mejorar la visibilidad de los negocios locales. Ofrecemos soluciones adaptadas a las necesidades de cada cliente: desde que nace la idea hasta que se coloca en la calle o en la pantalla.</span></p>
-<p><span class="eu">Urteetako esperientziak erakutsi digu marka on batek ez duela soilik ikusi behar, gogoratua izan behar duela. Horregatik, estrategia, diseinua eta ekoizpena talde bakar batean uztartzen ditugu, tratu hurbilarekin eta euskaraz zein gaztelaniaz.</span><span class="es">La experiencia de estos años nos ha enseñado que una buena marca no solo tiene que verse, tiene que recordarse. Por eso unimos estrategia, diseño y producción en un único equipo, con trato cercano y en euskera y castellano.</span></p>
-<ul class="stats"><li><b>15+</b><span class="eu">urteko esperientzia</span><span class="es">años de experiencia</span></li><li><b>300+</b><span class="eu">bezero pozik</span><span class="es">clientes satisfechos</span></li><li><b>1.200+</b><span class="eu">proiektu burututa</span><span class="es">proyectos realizados</span></li></ul>
-<a class="btn" href="#erreserba"><span class="eu">Erreserba egin</span><span class="es">Hacer reserva</span></a></div><div class="ph foto-portada" role="img" aria-label="Publigune"></div></div>
-<div class="sec"><h2><span class="eu">Egiten dugun lana</span><span class="es">Lo que hacemos</span></h2>
+<div class="hero"><div><h1>Publigune</h1><p><span class="eu">Zure marka ikusgai jartzen dugu: kartelak, errotuluak, kanpainak eta diseinua, Nafarroako txoko guztietarako.</span><span class="es" lang="es">Ponemos tu marca a la vista: carteles, rótulos, campañas y diseño para todos los rincones de Navarra.</span></p><p><span class="eu">Publigune Nafarroako publizitate-agentzia bat da, tokiko negozioen ikusgarritasuna hobetzeko sortua. Bezero bakoitzaren beharretara egokitutako irtenbideak eskaintzen ditugu: ideia bat sortzen dugunetik kalean edo pantailan jarri arte.</span><span class="es" lang="es">Publigune es una agencia de publicidad navarra creada para mejorar la visibilidad de los negocios locales. Ofrecemos soluciones adaptadas a las necesidades de cada cliente: desde que nace la idea hasta que se coloca en la calle o en la pantalla.</span></p>
+<p><span class="eu">Urteetako esperientziak erakutsi digu marka on batek ez duela soilik ikusi behar, gogoratua izan behar duela. Horregatik, estrategia, diseinua eta ekoizpena talde bakar batean uztartzen ditugu, tratu hurbilarekin eta euskaraz zein gaztelaniaz.</span><span class="es" lang="es">La experiencia de estos años nos ha enseñado que una buena marca no solo tiene que verse, tiene que recordarse. Por eso unimos estrategia, diseño y producción en un único equipo, con trato cercano y en euskera y castellano.</span></p>
+<ul class="stats"><li><b>15+</b><span class="eu">urteko esperientzia</span><span class="es" lang="es">años de experiencia</span></li><li><b>300+</b><span class="eu">bezero pozik</span><span class="es" lang="es">clientes satisfechos</span></li><li><b>1.200+</b><span class="eu">proiektu burututa</span><span class="es" lang="es">proyectos realizados</span></li></ul>
+<a class="btn" href="#erreserba"><span class="eu">Erreserba egin</span><span class="es" lang="es">Hacer reserva</span></a></div><div class="ph foto-portada" role="img" aria-label="Publigune"></div></div>
+<div class="sec"><h2><span class="eu">Egiten dugun lana</span><span class="es" lang="es">Lo que hacemos</span></h2>
 <div class="cards">
-<div class="card"><div class="ic">📣</div><h3><span class="eu">Kanpainak</span><span class="es">Campañas</span></h3><p><span class="eu">Zure mezua jendearengana iristeko ideiak.</span><span class="es">Ideas para que tu mensaje llegue a la gente.</span></p></div>
-<div class="card"><div class="ic">🪧</div><h3><span class="eu">Kanpoko publizitatea</span><span class="es">Publicidad exterior</span></h3><p><span class="eu">Kartelak, panelak eta errotuluak.</span><span class="es">Carteles, paneles y rótulos.</span></p></div>
-<div class="card"><div class="ic">🖨️</div><h3><span class="eu">Inprimaketa</span><span class="es">Impresión</span></h3><p><span class="eu">Liburuxkak, banderolak eta material grafikoa.</span><span class="es">Folletos, lonas y material gráfico.</span></p></div>
-<div class="card"><div class="ic">📱</div><h3><span class="eu">Sare sozialak</span><span class="es">Redes sociales</span></h3><p><span class="eu">Edukia eta kudeaketa digitala.</span><span class="es">Contenido y gestión digital.</span></p></div>
-<div class="card"><div class="ic">🎨</div><h3><span class="eu">Diseinua</span><span class="es">Diseño</span></h3><p><span class="eu">Marka-irudia eta logotipoak.</span><span class="es">Imagen de marca y logotipos.</span></p></div>
+<div class="card"><div class="ic">📣</div><h3><span class="eu">Kanpainak</span><span class="es" lang="es">Campañas</span></h3><p><span class="eu">Zure mezua jendearengana iristeko ideiak.</span><span class="es" lang="es">Ideas para que tu mensaje llegue a la gente.</span></p></div>
+<div class="card"><div class="ic">🪧</div><h3><span class="eu">Kanpoko publizitatea</span><span class="es" lang="es">Publicidad exterior</span></h3><p><span class="eu">Kartelak, panelak eta errotuluak.</span><span class="es" lang="es">Carteles, paneles y rótulos.</span></p></div>
+<div class="card"><div class="ic">🖨️</div><h3><span class="eu">Inprimaketa</span><span class="es" lang="es">Impresión</span></h3><p><span class="eu">Liburuxkak, banderolak eta material grafikoa.</span><span class="es" lang="es">Folletos, lonas y material gráfico.</span></p></div>
+<div class="card"><div class="ic">📱</div><h3><span class="eu">Sare sozialak</span><span class="es" lang="es">Redes sociales</span></h3><p><span class="eu">Edukia eta kudeaketa digitala.</span><span class="es" lang="es">Contenido y gestión digital.</span></p></div>
+<div class="card"><div class="ic">🎨</div><h3><span class="eu">Diseinua</span><span class="es" lang="es">Diseño</span></h3><p><span class="eu">Marka-irudia eta logotipoak.</span><span class="es" lang="es">Imagen de marca y logotipos.</span></p></div>
 </div></div>
 </section>
 
 <section id="erreserba">
-<div class="hero"><div><h1><span class="eu">Erreserba egin</span><span class="es">Hacer reserva</span></h1><p><span class="eu">Zer jarri nahi duzu?</span><span class="es">¿Qué quieres poner?</span></p><ul class="chk"><li><span class="eu">Kartel edo errotulu bat</span><span class="es">Un cartel o rótulo</span></li><li><span class="eu">Kanpaina oso bat</span><span class="es">Una campaña completa</span></li><li><span class="eu">Aholkularitza doakoa</span><span class="es">Asesoramiento gratuito</span></li></ul></div>
+<div class="hero"><div><h1><span class="eu">Erreserba egin</span><span class="es" lang="es">Hacer reserva</span></h1><p><span class="eu">Zer jarri nahi duzu?</span><span class="es" lang="es">¿Qué quieres poner?</span></p><ul class="chk"><li><span class="eu">Kartel edo errotulu bat</span><span class="es" lang="es">Un cartel o rótulo</span></li><li><span class="eu">Kanpaina oso bat</span><span class="es" lang="es">Una campaña completa</span></li><li><span class="eu">Aholkularitza doakoa</span><span class="es" lang="es">Asesoramiento gratuito</span></li></ul></div>
 <form class="form" action="https://api.web3forms.com/submit" method="POST">
 <input type="hidden" name="access_key" value="503f5d00-fb3f-4c55-9207-ef07153c3165">
 <input type="hidden" name="subject" value="Nueva reserva · Publigune">
 <input type="hidden" name="from_name" value="Web Publigune">
 <input type="checkbox" name="botcheck" id="botcheck" aria-label="No rellenar (anti-spam)" style="display:none" tabindex="-1" autocomplete="off">
-<label><span class="eu">Izena</span><span class="es">Nombre</span><input name="izena" required></label>
-<label><span class="eu">Abizenak</span><span class="es">Apellidos</span><input name="abizenak" required></label>
-<label><span class="eu">Telefonoa</span><span class="es">Teléfono</span><input name="telefonoa" type="tel"></label>
-<label><span class="eu">Data</span><span class="es">Fecha</span><input name="data" type="date"></label>
-<label class="full"><span class="eu">Mezua</span><span class="es">Mensaje</span><textarea name="mezua" rows="4"></textarea></label>
-<button class="btn full"><span class="eu">Bidali</span><span class="es">Enviar</span></button>
+<label><span class="eu">Izena</span><span class="es" lang="es">Nombre</span><input name="izena" autocomplete="given-name" required></label>
+<label><span class="eu">Abizenak</span><span class="es" lang="es">Apellidos</span><input name="abizenak" autocomplete="family-name" required></label>
+<label><span class="eu">Telefonoa</span><span class="es" lang="es">Teléfono</span><input name="telefonoa" type="tel" autocomplete="tel"></label>
+<label><span class="eu">Data</span><span class="es" lang="es">Fecha</span><input name="data" type="date"></label>
+<label class="full"><span class="eu">Mezua</span><span class="es" lang="es">Mensaje</span><textarea name="mezua" rows="4"></textarea></label>
+<button class="btn full"><span class="eu">Bidali</span><span class="es" lang="es">Enviar</span></button>
 </form></div>
-<div class="sec"><h2><span class="eu">Bezeroen balorazioak</span><span class="es">Valoraciones de clientes</span></h2>
+<div class="sec"><h2><span class="eu">Bezeroen balorazioak</span><span class="es" lang="es">Valoraciones de clientes</span></h2>
 <div class="cards">
-<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Oso profesionalak eta azkarrak. Gure dendak ikusgarritasuna irabazi du.</span><span class="es">Muy profesionales y rápidos. Nuestra tienda ha ganado visibilidad.</span></p><small>Maite, Iruñea</small></div>
-<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Kanpaina polita eta prezio onean. Gomendatzekoa!</span><span class="es">Campaña preciosa y a buen precio. ¡Recomendable!</span></p><small>Aitor, Barañáin</small></div>
-<div class="card rev"><div class="stars">★★★★☆</div><p><span class="eu">Tratu ona eta emaitza oso ona. Errepikatuko dugu.</span><span class="es">Buen trato y muy buen resultado. Repetiremos.</span></p><small>Leire, Burlata</small></div>
+<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Oso profesionalak eta azkarrak. Gure dendak ikusgarritasuna irabazi du.</span><span class="es" lang="es">Muy profesionales y rápidos. Nuestra tienda ha ganado visibilidad.</span></p><small>Maite, Iruñea</small></div>
+<div class="card rev"><div class="stars">★★★★★</div><p><span class="eu">Kanpaina polita eta prezio onean. Gomendatzekoa!</span><span class="es" lang="es">Campaña preciosa y a buen precio. ¡Recomendable!</span></p><small>Aitor, Barañáin</small></div>
+<div class="card rev"><div class="stars">★★★★☆</div><p><span class="eu">Tratu ona eta emaitza oso ona. Errepikatuko dugu.</span><span class="es" lang="es">Buen trato y muy buen resultado. Repetiremos.</span></p><small>Leire, Burlata</small></div>
 </div></div>
 </section>
 
-<section id="non" class="sec"><h2><span class="eu">Non aurkitu</span><span class="es">Dónde encontrarnos</span></h2>
-<div class="where"><div class="panel"><p><span class="eu">Zugarramurdi, Nafarroa. Etorri bisitatzera edo deitu iezaguzu.</span><span class="es">Zugarramurdi, Navarra. Ven a visitarnos o llámanos.</span></p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Zugarramurdi"><span class="eu">Nola iritsi</span><span class="es">Cómo llegar</span></a><a class="btn alt" href="tel:+34686091704"><span class="eu">Deitu</span><span class="es">Llamar</span></a><a class="btn alt" href="mailto:ik.anermartinez@hernanilanh.eus"><span class="eu">Posta elektronikoa</span><span class="es">Correo electrónico</span></a></div>
+<section id="non" class="sec"><h2><span class="eu">Non aurkitu</span><span class="es" lang="es">Dónde encontrarnos</span></h2>
+<div class="where"><div class="panel"><p><span class="eu">Zugarramurdi, Nafarroa. Etorri bisitatzera edo deitu iezaguzu.</span><span class="es" lang="es">Zugarramurdi, Navarra. Ven a visitarnos o llámanos.</span></p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Zugarramurdi"><span class="eu">Nola iritsi</span><span class="es" lang="es">Cómo llegar</span></a><a class="btn alt" href="tel:+34686091704"><span class="eu">Deitu</span><span class="es" lang="es">Llamar</span></a><a class="btn alt" href="mailto:ik.anermartinez@hernanilanh.eus"><span class="eu">Posta elektronikoa</span><span class="es" lang="es">Correo electrónico</span></a></div>
 <div class="map"><iframe title="Zugarramurdi" src="https://maps.google.com/maps?q=Zugarramurdi,+Navarra&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div>
 </section>
 
+<section id="hazkundea" class="sec growth">
+<h2><span class="eu">Hazkunde-Grafikoak</span><span class="es" lang="es">Gráficos de crecimiento</span></h2>
+<p class="g-intro"><span class="eu">Atal honetan Publigune-ren bilakaera ekonomikoa erakusten dugu. 2025eko eta 2026ko emaitzak alderatuta, fakturazioak eta urteko gastuek izan duten bilakaera ikus daiteke, eta hortik mozkina ateratzen da.</span><span class="es" lang="es">En este apartado mostramos la evolución económica de Publigune. Comparando los resultados de 2025 y 2026 se ve cómo han evolucionado la facturación y los gastos anuales, y de ahí sale el beneficio.</span></p>
+
+<div class="cards kpis">
+<div class="card kpi"><b><span class="eu">+%94,7</span><span class="es" lang="es">+94,7 %</span></b><span class="eu">Fakturazioa: 47.700 €-tik 92.850 €-ra</span><span class="es" lang="es">Facturación: de 47.700 € a 92.850 €</span></div>
+<div class="card kpi"><b><span class="eu">+%42,5</span><span class="es" lang="es">+42,5 %</span></b><span class="eu">Urteko gastuak: 33.000 €-tik 47.040 €-ra</span><span class="es" lang="es">Gastos anuales: de 33.000 € a 47.040 €</span></div>
+<div class="card kpi"><b>45.810 €</b><span class="eu">2026ko mozkina (2025ean: 14.700 €)</span><span class="es" lang="es">Beneficio de 2026 (en 2025: 14.700 €)</span></div>
+</div>
+
+<div class="fig-grid">
+<figure class="fig">
+<img src="grafikoa-salmentak.png" alt="Salmentak 2025 eta 2026 alderatzen dituen barra-grafikoa: lau zerbitzu-lerroek gora egin dute" width="442" height="346" loading="lazy">
+<figcaption><span class="ft"><span class="eu">Salmentak 2025 vs 2026</span><span class="es" lang="es">Ventas 2025 vs 2026</span></span><br><span class="eu">Zerbitzu-lerro bakoitzaren fakturazioa urteko. Lerro guztiek gora egin dute.</span><span class="es" lang="es">Facturación anual de cada línea de servicio. Todas las líneas han crecido.</span></figcaption>
+<details class="datuak"><summary><span class="eu">Datuak taulan ikusi</span><span class="es" lang="es">Ver datos en tabla</span></summary>
+<table><caption class="sr"><span class="eu">Fakturazioa zerbitzu-lerroko, 2025 eta 2026</span><span class="es" lang="es">Facturación por línea de servicio, 2025 y 2026</span></caption>
+<thead><tr><th scope="col"><span class="eu">Zerbitzua</span><span class="es" lang="es">Servicio</span></th><th scope="col">2025</th><th scope="col">2026</th></tr></thead>
+<tbody><tr><th scope="row"><span class="eu">Web Garapen Pertsonalizatua</span><span class="es" lang="es">Desarrollo Web Personalizado</span></th><td>17.100 €</td><td>30.400 €</td></tr><tr><th scope="row"><span class="eu">Bideo Ekoizpen & Edizio Pack-a</span><span class="es" lang="es">Pack Producción y Edición de Vídeo</span></th><td>15.600 €</td><td>29.250 €</td></tr><tr><th scope="row"><span class="eu">Publizitate Kanpaina Integrala</span><span class="es" lang="es">Campaña Publicitaria Integral</span></th><td>9.600 €</td><td>22.400 €</td></tr><tr><th scope="row"><span class="eu">Mantenua & Green Hosting</span><span class="es" lang="es">Mantenimiento y Green Hosting</span></th><td>5.400 €</td><td>10.800 €</td></tr></tbody>
+<tfoot><tr><th scope="row">Guztira / Total</th><td>47.700 €</td><td>92.850 €</td></tr></tfoot></table></details>
+</figure>
+<figure class="fig">
+<img src="grafikoa-gastuak.png" alt="Urteko gastuak 2025 eta 2026 alderatzen dituen barra-grafikoa: lau gastu-atalek gora egin dute" width="457" height="373" loading="lazy">
+<figcaption><span class="ft"><span class="eu">Urteko gastuak 2025 vs 2026</span><span class="es" lang="es">Gastos anuales 2025 vs 2026</span></span><br><span class="eu">Gastuen banaketa lau atal nagusitan. Gastuek fakturazioak baino astiroago egin dute gora.</span><span class="es" lang="es">Reparto de los gastos en cuatro partidas principales. Los gastos han crecido más despacio que la facturación.</span></figcaption>
+<details class="datuak"><summary><span class="eu">Datuak taulan ikusi</span><span class="es" lang="es">Ver datos en tabla</span></summary>
+<table><caption class="sr"><span class="eu">Urteko gastuak atalka, 2025 eta 2026</span><span class="es" lang="es">Gastos anuales por partida, 2025 y 2026</span></caption>
+<thead><tr><th scope="col"><span class="eu">Atala</span><span class="es" lang="es">Partida</span></th><th scope="col">2025</th><th scope="col">2026</th></tr></thead>
+<tbody><tr><th scope="row"><span class="eu">Azpiegitura eta Zerbitzari Berdeak</span><span class="es" lang="es">Infraestructura y Servidores Verdes</span></th><td>5.400 €</td><td>8.640 €</td></tr><tr><th scope="row"><span class="eu">Software Lizentziak eta Garapen Tresnak</span><span class="es" lang="es">Licencias de Software y Herramientas</span></th><td>7.440 €</td><td>10.200 €</td></tr><tr><th scope="row"><span class="eu">Marketin eta Publizitate Propioa</span><span class="es" lang="es">Marketing y Publicidad Propia</span></th><td>4.560 €</td><td>8.400 €</td></tr><tr><th scope="row"><span class="eu">Kanpo Kolaboratzaileak eta Freelance-ak</span><span class="es" lang="es">Colaboradores Externos y Freelances</span></th><td>15.600 €</td><td>19.800 €</td></tr></tbody>
+<tfoot><tr><th scope="row">Guztira / Total</th><td>33.000 €</td><td>47.040 €</td></tr></tfoot></table></details>
+</figure>
+</div>
+
+<div class="g-text">
+<h3><span class="eu">Salmentak: fakturazioa ia bikoiztu da</span><span class="es" lang="es">Ventas: la facturación casi se ha duplicado</span></h3>
+<p><span class="eu">Fakturazioa 47.700 €-tik 92.850 €-ra igo da, hau da, %94,7ko hazkundea. Lerro nagusia Web Garapen Pertsonalizatua da, 30.400 €-rekin (%77,8 gehiago), eta Bideo Ekoizpen & Edizio Pack-a oso gertu dago, 29.250 €-rekin (%87,5 gehiago). Hazkunderik handiena Publizitate Kanpaina Integralak izan du: 9.600 €-tik 22.400 €-ra (%133). Mantenua & Green Hosting zerbitzuak, berriz, bikoiztu egin du bere fakturazioa: 5.400 €-tik 10.800 €-ra.</span><span class="es" lang="es">La facturación ha pasado de 47.700 € a 92.850 €, es decir, un crecimiento del 94,7 %. La línea principal es Desarrollo Web Personalizado, con 30.400 € (un 77,8 % más), y el Pack de Producción y Edición de Vídeo está muy cerca, con 29.250 € (un 87,5 % más). El mayor crecimiento lo ha tenido la Campaña Publicitaria Integral: de 9.600 € a 22.400 € (un 133 %). Por su parte, Mantenimiento y Green Hosting ha duplicado su facturación: de 5.400 € a 10.800 €.</span></p>
+<h3><span class="eu">Gastuak: kontrolpean hazten</span><span class="es" lang="es">Gastos: crecimiento bajo control</span></h3>
+<p><span class="eu">Urteko gastuak 33.000 €-tik 47.040 €-ra igo dira (%42,5), fakturazioa baino askoz motelago. Gastu handiena Kanpo Kolaboratzaileak eta Freelance-ak da (15.600 €-tik 19.800 €-ra), baina bere hazkundea txikiena da (%26,9). Gehien hazi dena Marketin eta Publizitate Propioa da (4.560 €-tik 8.400 €-ra), gure burua ezagutarazteko egindako inbertsioa baita. Azpiegitura eta Zerbitzari Berdeek 8.640 €-ra egin dute gora, eta Software Lizentziek eta Garapen Tresnek 10.200 €-ra.</span><span class="es" lang="es">Los gastos anuales han subido de 33.000 € a 47.040 € (un 42,5 %), mucho más despacio que la facturación. El mayor gasto son los Colaboradores Externos y Freelances (de 15.600 € a 19.800 €), aunque es el que menos crece (26,9 %). La partida que más ha crecido es Marketing y Publicidad Propia (de 4.560 € a 8.400 €), ya que es inversión para darnos a conocer. Infraestructura y Servidores Verdes sube a 8.640 €, y Licencias de Software y Herramientas de Desarrollo a 10.200 €.</span></p>
+<h3><span class="eu">Emaitza: mozkina hiru aldiz baino handiagoa</span><span class="es" lang="es">Resultado: un beneficio más de tres veces mayor</span></h3>
+<p><span class="eu">Fakturazioak gastuak baino azkarrago hazi denez, mozkina 14.700 €-tik 45.810 €-ra pasa da (92.850 € - 47.040 €). Hau da, hiru aldiz baino gehiago. Horri esker, ekipoan, teknologia berdean eta zerbitzu berrietan inbertitzen jarraitu dezakegu.</span><span class="es" lang="es">Como la facturación ha crecido más rápido que los gastos, el beneficio pasa de 14.700 € a 45.810 € (92.850 € - 47.040 €). Es decir, más de tres veces más. Gracias a ello podemos seguir invirtiendo en el equipo, en tecnología verde y en nuevos servicios.</span></p>
+</div>
+</section>
+
 <section id="agenda2030" class="sec eco">
-<h2><span class="eu">🌱 Agenda 2030 eta gure konpromiso berdea</span><span class="es">🌱 Agenda 2030: nuestro compromiso verde</span></h2>
-<p class="eco-intro"><span class="eu">Publigune-n uste dugu publizitatea ere jasangarria izan daitekeela. Horregatik, 2030 Agendaren alde lan egiten dugu, eguneroko erabaki zehatzekin.</span><span class="es">En Publigune creemos que la publicidad también puede ser sostenible. Por eso trabajamos por la Agenda 2030 con decisiones concretas en el día a día.</span></p>
+<h2><span class="eu">🌱 Agenda 2030 eta gure konpromiso berdea</span><span class="es" lang="es">🌱 Agenda 2030: nuestro compromiso verde</span></h2>
+<p class="eco-intro"><span class="eu">Publigune-n uste dugu publizitatea ere jasangarria izan daitekeela. Horregatik, 2030 Agendaren alde lan egiten dugu, eguneroko erabaki zehatzekin.</span><span class="es" lang="es">En Publigune creemos que la publicidad también puede ser sostenible. Por eso trabajamos por la Agenda 2030 con decisiones concretas en el día a día.</span></p>
 <div class="eco-grid">
 <article class="card eco-card">
-<img class="ods-img" src="ods-13.png" alt="ODS 13 · Acción por el clima" width="140" height="140">
-<h3><span class="eu">Mugikortasun garbia eta karbono-aztarna murriztea</span><span class="es">Movilidad limpia y menor huella de carbono</span></h3>
-<p><span class="eu">Filmaketak egiteko garraio publikoa edo ibilgailu elektrikoak erabiltzen ditugu. Urteroko 450 €-ko aurrekontua bideratzen dugu CO2 igorpena minimizatzeko.</span><span class="es">Para realizar las grabaciones usamos transporte público o vehículos eléctricos. Cada año destinamos un presupuesto de 450 € a minimizar las emisiones de CO2.</span></p>
+<img class="ods-img" src="ods-13.png" alt="ODS 13 · Acción por el clima" lang="es" width="140" height="140">
+<h3><span class="eu">Mugikortasun garbia eta karbono-aztarna murriztea</span><span class="es" lang="es">Movilidad limpia y menor huella de carbono</span></h3>
+<p><span class="eu">Filmaketak egiteko garraio publikoa edo ibilgailu elektrikoak erabiltzen ditugu. Urteroko 450 €-ko aurrekontua bideratzen dugu CO2 igorpena minimizatzeko.</span><span class="es" lang="es">Para realizar las grabaciones usamos transporte público o vehículos eléctricos. Cada año destinamos un presupuesto de 450 € a minimizar las emisiones de CO2.</span></p>
 </article>
 <article class="card eco-card">
-<img class="ods-img" src="ods-12.png" alt="ODS 12 · Producción y consumo responsables" width="140" height="140">
-<h3><span class="eu">%0 paper politika eta hardware birziklapena</span><span class="es">Política de 0 % papel y reciclaje de hardware</span></h3>
-<p><span class="eu">Paperezko dokumentazio guztia ezabatu dugu (%100 kudeaketa digitala). Horrez gain, gure kamerak eta ordenagailuak tokiko puntu garbi homologatuetara eramaten ditugu beren bizitza amaitzean.</span><span class="es">Hemos eliminado toda la documentación en papel (100 % gestión digital). Además, al final de su vida útil llevamos nuestras cámaras y ordenadores a puntos limpios locales homologados.</span></p>
+<img class="ods-img" src="ods-12.png" alt="ODS 12 · Producción y consumo responsables" lang="es" width="140" height="140">
+<h3><span class="eu">%0 paper politika eta hardware birziklapena</span><span class="es" lang="es">Política de 0 % papel y reciclaje de hardware</span></h3>
+<p><span class="eu">Paperezko dokumentazio guztia ezabatu dugu (%100 kudeaketa digitala). Horrez gain, gure kamerak eta ordenagailuak tokiko puntu garbi homologatuetara eramaten ditugu beren bizitza amaitzean.</span><span class="es" lang="es">Hemos eliminado toda la documentación en papel (100 % gestión digital). Además, al final de su vida útil llevamos nuestras cámaras y ordenadores a puntos limpios locales homologados.</span></p>
 </article>
 <article class="card eco-card">
-<img class="ods-img" src="ods-9.png" alt="ODS 9 · Industria, innovación e infraestructura" width="140" height="140">
-<h3><span class="eu">Teknologia arina eta zero-waste garapena</span><span class="es">Tecnología ligera y desarrollo «zero waste»</span></h3>
-<p><span class="eu">Gure web-kodea errendimendu altuan garatzen dugu. Kode arinak zerbitzariek elektrizitate gutxiago kontsumitzea dakar, azpiegitura digital berdeak bultzatuz.</span><span class="es">Desarrollamos nuestro código web con alto rendimiento. Un código ligero hace que los servidores consuman menos electricidad y fomenta infraestructuras digitales más verdes.</span></p>
+<img class="ods-img" src="ods-9.png" alt="ODS 9 · Industria, innovación e infraestructura" lang="es" width="140" height="140">
+<h3><span class="eu">Teknologia arina eta zero-waste garapena</span><span class="es" lang="es">Tecnología ligera y desarrollo «zero waste»</span></h3>
+<p><span class="eu">Gure web-kodea errendimendu altuan garatzen dugu. Kode arinak zerbitzariek elektrizitate gutxiago kontsumitzea dakar, azpiegitura digital berdeak bultzatuz.</span><span class="es" lang="es">Desarrollamos nuestro código web con alto rendimiento. Un código ligero hace que los servidores consuman menos electricidad y fomenta infraestructuras digitales más verdes.</span></p>
 </article>
 </div>
-<p class="eco-note"><span class="eu">Garapen Jasangarrirako Helburuak (GJH): 9, 12 eta 13.</span><span class="es">Objetivos de Desarrollo Sostenible (ODS): 9, 12 y 13.</span></p>
+<p class="eco-note"><span class="eu">Garapen Jasangarrirako Helburuak (GJH): 9, 12 eta 13.</span><span class="es" lang="es">Objetivos de Desarrollo Sostenible (ODS): 9, 12 y 13.</span></p>
 </section>
 
 <section id="nor-gara" class="about">
-<h2><span class="eu">Nor gara?</span><span class="es">¿Quiénes somos?</span></h2>
+<h2><span class="eu">Nor gara?</span><span class="es" lang="es">¿Quiénes somos?</span></h2>
 <div class="about-grid">
 <div>
-<p><span class="eu">Publigune publizitate-agentzia bat da, tokiko negozioei hazten laguntzeko sortua. Hasieratik, helburu argi bat izan dugu: Nafarroako merkatari, ostalari eta enpresei ahotsa ematea, publizitate profesionala eta eskuragarria eskainiz.</span><span class="es">Publigune es una agencia de publicidad creada para ayudar a crecer a los negocios locales. Desde el principio hemos tenido un objetivo claro: dar voz a comerciantes, hosteleros y empresas de Navarra, ofreciendo publicidad profesional y accesible.</span></p>
-<p><span class="eu">Urte hauetan zehar ehunka proiektu lagundu ditugu, auzoko denda txikietatik kanpaina handiagoetara. Gure bezero asko hasieratik gurekin jarraitzen dute, eta hori da gure lanaren onena.</span><span class="es">A lo largo de estos años hemos acompañado cientos de proyectos, desde pequeñas tiendas de barrio hasta campañas de mayor alcance. Muchos de nuestros clientes siguen con nosotros desde el principio, y esa es la mejor muestra de nuestro trabajo.</span></p>
+<p><span class="eu">Publigune publizitate-agentzia bat da, tokiko negozioei hazten laguntzeko sortua. Hasieratik, helburu argi bat izan dugu: Nafarroako merkatari, ostalari eta enpresei ahotsa ematea, publizitate profesionala eta eskuragarria eskainiz.</span><span class="es" lang="es">Publigune es una agencia de publicidad creada para ayudar a crecer a los negocios locales. Desde el principio hemos tenido un objetivo claro: dar voz a comerciantes, hosteleros y empresas de Navarra, ofreciendo publicidad profesional y accesible.</span></p>
+<p><span class="eu">Urte hauetan zehar ehunka proiektu lagundu ditugu, auzoko denda txikietatik kanpaina handiagoetara. Gure bezero asko hasieratik gurekin jarraitzen dute, eta hori da gure lanaren onena.</span><span class="es" lang="es">A lo largo de estos años hemos acompañado cientos de proyectos, desde pequeñas tiendas de barrio hasta campañas de mayor alcance. Muchos de nuestros clientes siguen con nosotros desde el principio, y esa es la mejor muestra de nuestro trabajo.</span></p>
 <ol class="hist">
-<li><b>2010</b><span class="eu">Publigune sortzen da Zugarramurdin, kartel eta errotuluen tailer txiki gisa.</span><span class="es">Nace Publigune en Zugarramurdi como pequeño taller de carteles y rótulos.</span></li>
-<li><b>2015</b><span class="eu">Diseinu grafikoa eta marka-irudia zerbitzuetara gehitzen ditugu.</span><span class="es">Incorporamos el diseño gráfico y la imagen de marca a nuestros servicios.</span></li>
-<li><b>2020</b><span class="eu">Sare sozialak eta kanpaina digitalak lantzen hasten gara.</span><span class="es">Empezamos a trabajar las redes sociales y las campañas digitales.</span></li>
-<li><b>2026</b><span class="eu">Jasangarritasunaren aldeko konpromisoa indartzen dugu, 2030 Agendarekin bat eginez.</span><span class="es">Reforzamos nuestro compromiso con la sostenibilidad, alineados con la Agenda 2030.</span></li>
+<li><b>2010</b><span class="eu">Publigune sortzen da Zugarramurdin, kartel eta errotuluen tailer txiki gisa.</span><span class="es" lang="es">Nace Publigune en Zugarramurdi como pequeño taller de carteles y rótulos.</span></li>
+<li><b>2015</b><span class="eu">Diseinu grafikoa eta marka-irudia zerbitzuetara gehitzen ditugu.</span><span class="es" lang="es">Incorporamos el diseño gráfico y la imagen de marca a nuestros servicios.</span></li>
+<li><b>2020</b><span class="eu">Sare sozialak eta kanpaina digitalak lantzen hasten gara.</span><span class="es" lang="es">Empezamos a trabajar las redes sociales y las campañas digitales.</span></li>
+<li><b>2026</b><span class="eu">Jasangarritasunaren aldeko konpromisoa indartzen dugu, 2030 Agendarekin bat eginez.</span><span class="es" lang="es">Reforzamos nuestro compromiso con la sostenibilidad, alineados con la Agenda 2030.</span></li>
 </ol>
 </div>
 <img class="about-img" src="camarografo.webp" alt="Cámara de Publigune grabando con cámara de cine y auriculares" width="520" height="740" loading="lazy">
