@@ -502,3 +502,51 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 #l-eu:focus-visible ~ header label[for=l-eu],
 #l-es:focus-visible ~ header label[for=l-es] { outline: 3px solid var(--acc); outline-offset: 2px; }
+
+
+/* ---------- HERO: cifras de la empresa ---------- */
+.hero p { margin: 0 0 14px; }
+.stats {
+  display: flex; flex-wrap: wrap; gap: 12px 28px;
+  margin: 18px 0 22px; padding: 0; list-style: none;
+}
+.stats li { display: flex; flex-direction: column; line-height: 1.2; }
+.stats b { font-size: 1.7rem; letter-spacing: -0.5px; }
+.stats span { font-size: 0.85rem; color: var(--mut); }
+
+/* ---------- NOR GARA? (al final, estilo sobrio) ---------- */
+.about {
+  margin-top: 24px;
+  padding: 44px 0 20px;
+  border-top: 1px solid var(--line);
+}
+.about h2 { font-size: 1.5rem; border-bottom: 1px solid var(--mut); }
+.about-grid {
+  display: grid; grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px; align-items: start;
+}
+.about p { margin: 0 0 12px; color: var(--ink); font-size: 0.95rem; }
+
+/* Foto discreta: sin sombra de color y algo más apagada */
+.about .foto-nosotros {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  filter: saturate(0.8);
+  background: url('nosotros.png') 20% center / cover no-repeat, var(--line);
+}
+
+/* Trayectoria */
+.hist { margin: 22px 0 0; padding: 0; list-style: none; border-left: 2px solid var(--line); }
+.hist li { position: relative; padding: 0 0 14px 20px; font-size: 0.92rem; color: var(--mut); }
+.hist li::before {
+  content: ""; position: absolute; left: -6px; top: 7px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--mut);
+}
+.hist b { display: block; color: var(--ink); font-size: 1rem; }
+
+@media (max-width: 760px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about .foto-nosotros { aspect-ratio: 16 / 10; }
+}
