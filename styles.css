@@ -23,10 +23,11 @@
   --bg:    #fbf7f0;   /* fondo de la página */
   --surf:  #ffffff;   /* fondo de tarjetas y paneles */
   --ink:   #1d1b24;   /* texto y bordes */
-  --mut:   #6a667a;   /* texto secundario (gris) */
+  --mut:   #57536a;   /* texto secundario (gris) */
   --acc:   #ff5a3c;   /* color principal (naranja) */
   --acc2:  #ffc531;   /* color secundario (amarillo) */
   --line:  #e6e0d4;   /* líneas suaves */
+  --star:  #8a5a00;   /* estrellas (contraste alto) */
   --eco:   #2f7d4f;   /* verde de la sección Agenda 2030 */
 
   /* Respeta las zonas de los móviles con "notch" */
@@ -41,7 +42,8 @@
     --bg:   #15131b;
     --surf: #201d29;
     --ink:  #f4f1ea;
-    --mut:  #a39fb3;
+    --mut:  #b8b4c8;
+    --star: #ffc531;
     --line: #322e3f;
   }
 }
@@ -230,7 +232,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 4px 4px 0 var(--ink);
   background: var(--acc);
-  color: #fff;
+  color: #1d1b24;                                       /* texto oscuro: contraste 5:1 sobre naranja */
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -352,10 +354,9 @@ ul.chk li {
 
 /* ---------- 8. VALORACIONES ---------- */
 .stars {
-  color: var(--acc2);
+  color: var(--star);
   font-size: 1.1rem;
   letter-spacing: 2px;
-  -webkit-text-stroke: 1px var(--ink);
 }
 
 .rev p {
@@ -486,3 +487,18 @@ footer .w {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ---------- ACCESIBILIDAD ---------- */
+/* Fieldset que envuelve la página (sin aspecto visual) */
+.pg { border: 0; margin: 0; padding: 0; min-width: 0; }
+.sr {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+/* Foco visible con teclado */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, label:focus-visible {
+  outline: 3px solid var(--ink); outline-offset: 2px;
+}
+#l-eu:focus-visible ~ header label[for=l-eu],
+#l-es:focus-visible ~ header label[for=l-es] { outline: 3px solid var(--acc); outline-offset: 2px; }

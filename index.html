@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Publigune</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
+<fieldset class="pg"><legend class="sr">Idioma / Hizkuntza</legend>
 <input class="rd" type="radio" name="lang" id="l-eu" checked aria-label="Euskara">
 <input class="rd" type="radio" name="lang" id="l-es" aria-label="Español">
 
@@ -37,7 +38,7 @@
 <input type="hidden" name="access_key" value="503f5d00-fb3f-4c55-9207-ef07153c3165">
 <input type="hidden" name="subject" value="Nueva reserva · Publigune">
 <input type="hidden" name="from_name" value="Web Publigune">
-<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<input type="checkbox" name="botcheck" id="botcheck" aria-label="No rellenar (anti-spam)" style="display:none" tabindex="-1" autocomplete="off">
 <label><span class="eu">Izena</span><span class="es">Nombre</span><input name="izena" required></label>
 <label><span class="eu">Abizenak</span><span class="es">Apellidos</span><input name="abizenak" required></label>
 <label><span class="eu">Telefonoa</span><span class="es">Teléfono</span><input name="telefonoa" type="tel"></label>
@@ -83,5 +84,6 @@
 </main>
 
 <footer><div class="w"><b>Publigune</b><span>© 2026 Publigune</span></div></footer>
+</fieldset>
 </body>
 </html>
