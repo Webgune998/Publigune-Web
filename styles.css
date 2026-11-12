@@ -550,3 +550,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .about-grid { grid-template-columns: 1fr; }
   .about .foto-nosotros { aspect-ratio: 16 / 10; }
 }
+
+
+/* Foto de "Nor gara?": fondo blanco, sobria */
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
